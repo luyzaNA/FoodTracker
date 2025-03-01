@@ -1,0 +1,35 @@
+<div class="container mt-5 w-75">
+  <div class="card shadow-lg border-0 rounded-3 p-4" style="background-color: #f9f5ff;">
+    <h4 style="color: #8b61c2; text-align: center; font-weight: bold" class="mb-4">RESULTS</h4>
+
+    <div class="d-flex align-items-center mb-4">
+      <img src="../../assets/Icons/show-water.svg" class="result-icon me-3 " alt="Water Intake" >
+      <p class="mb-0"><strong>Water Intake:</strong> {{ result.waterIntake | number:'1.2-2' }} ml</p>
+    </div>
+
+    <div class="d-flex align-items-center mb-4">
+      <img src="../../assets/Icons/show-ncb.svg" class="result-icon me-3" alt="BMR" >
+      <p class="mb-0"><strong>NCB:</strong> {{ result.bmr | number:'1.2-2' }} kcal/day</p>
+    </div>
+
+    <div class="d-flex align-items-center mb-4">
+      <img src="../../assets/Icons/show-nct.svg" class="result-icon me-3" alt="NCT">
+      <p class="mb-0"><strong>NCT:</strong> {{ result.nct | number:'1.2-2' }} kcal/day</p>
+    </div>
+
+    <div class="d-flex align-items-center mb-4">
+      <img src="../../assets/Icons/show-bmi.svg" class="result-icon me-3" alt="BMI">
+      <p class="mb-0"><strong>BMI:</strong> {{ result.bmi | number:'1.2-2' }}</p>
+    </div>
+
+    <div class="d-flex align-items-center mb-4">
+      <img src="../../assets/Icons/show-perfect-weight.svg" class="result-icon me-3" alt="Ideal Weight" >
+      <p class="mb-0"><strong>Ideal Weight:</strong> {{ result.idealWeight | number:'1.2-2' }} kg</p>
+    </div>
+
+    <div class="d-flex align-items-center">
+      <img src="../../assets/Icons/show-normal-weight.svg"  class="result-icon me-3" alt="Normal Weight Range">
+      <p class="mb-0"><strong>Normal Weight Range:</strong> {{ result.normalWeightRange.min | number:'1.2-2' }} - {{ result.normalWeightRange.max | number:'1.2-2' }} kg</p>
+    </div>
+  </div>
+</div>
