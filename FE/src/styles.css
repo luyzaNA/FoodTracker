@@ -1,0 +1,74 @@
+.color-bg {
+  background-color: #fdfcff;
+  font-family: "Funnel Sans", serif;
+}
+
+.button-bg {
+  background-color: #fdfcff;
+}
+
+.button-bg-primary {
+  background-color: #8b61c2;
+  color: #fdfcff;
+}
+
+.button-bg-primary:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 8px rgb(145, 145, 154);
+}
+
+html{
+  height: 100vh;
+  background-color: #fdfcff;
+
+}
+.button-border {
+  border: 2px solid #8b61c2;
+  border-radius: 8px;
+}
+
+.button-bg:hover {
+  background-color: rgba(208, 207, 220, 0.68);
+  border: 2px solid #8b61c2;
+  cursor: pointer;
+}
+
+.result-icon {
+  width: 30px;
+  height: 30px;
+  padding: 4px;
+}
+
+.icon{
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+}
+
+h4 {
+  color: #8b61c2 !important;
+  text-align: center !important;
+  font-weight: bold !important;
+  margin: 16px !important;
+}
+
+.container-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.form-container {
+  padding: 1rem;
+  border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 600px;
+  width: 100%;
+  margin-bottom: 0px;
+}
+
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
