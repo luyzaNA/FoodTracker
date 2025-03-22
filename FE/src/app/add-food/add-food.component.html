@@ -4,42 +4,42 @@
     <div class="mb-1 d-flex align-items-center justify-content-center">
     <mat-form-field appearance="outline" class="w-75 mb-1">
       <mat-label>Name</mat-label>
-      <input matInput type="text">
+      <input matInput type="text" [(ngModel)]="food.name" name="name">
     </mat-form-field>
     </div>
 
     <div class="mb-1 d-flex align-items-center justify-content-center">
     <mat-form-field appearance="outline" class="w-75 mb-1">
       <mat-label>Calories</mat-label>
-      <input matInput type="number">
+      <input matInput type="number" [(ngModel)]="food.calories" name="calories">
     </mat-form-field>
     </div>
 
     <div class="mb-1 d-flex align-items-center justify-content-center">
       <mat-form-field appearance="outline" class="w-75 mb-1">
       <mat-label>Proteins</mat-label>
-      <input matInput type="number">
+        <input matInput type="number" [(ngModel)]="food.proteins" name="proteins">
     </mat-form-field>
     </div>
 
     <div class="mb-1 d-flex align-items-center justify-content-center">
       <mat-form-field appearance="outline" class="w-75 mb-1">
       <mat-label>Fats</mat-label>
-      <input matInput type="number">
+        <input matInput type="number" [(ngModel)]="food.fats" name="fats">
     </mat-form-field>
     </div>
 
     <div class="mb-1 d-flex align-items-center justify-content-center">
       <mat-form-field appearance="outline" class="w-75 mb-1">
       <mat-label>Carbs</mat-label>
-      <input matInput type="number">
+        <input matInput type="number" [(ngModel)]="food.carbohydrates" name="carbs">
     </mat-form-field>
     </div>
 
       <div class="mb-1 d-flex align-items-center justify-content-center">
       <mat-form-field appearance="outline" class="w-75 mb-1">
       <mat-label>Fibers</mat-label>
-      <input matInput type="number">
+        <input matInput type="number" [(ngModel)]="food.fiber" name="fibers">
     </mat-form-field>
     </div>
 
