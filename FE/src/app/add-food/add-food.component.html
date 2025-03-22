@@ -1,0 +1,53 @@
+<div class="container container-center">
+  <form class="form-container">
+    <h4>ADD FOOD & QUANTITIES / 100G</h4>
+    <div class="mb-1 d-flex align-items-center justify-content-center">
+    <mat-form-field appearance="outline" class="w-75 mb-1">
+      <mat-label>Name</mat-label>
+      <input matInput type="text">
+    </mat-form-field>
+    </div>
+
+    <div class="mb-1 d-flex align-items-center justify-content-center">
+    <mat-form-field appearance="outline" class="w-75 mb-1">
+      <mat-label>Calories</mat-label>
+      <input matInput type="number">
+    </mat-form-field>
+    </div>
+
+    <div class="mb-1 d-flex align-items-center justify-content-center">
+      <mat-form-field appearance="outline" class="w-75 mb-1">
+      <mat-label>Proteins</mat-label>
+      <input matInput type="number">
+    </mat-form-field>
+    </div>
+
+    <div class="mb-1 d-flex align-items-center justify-content-center">
+      <mat-form-field appearance="outline" class="w-75 mb-1">
+      <mat-label>Fats</mat-label>
+      <input matInput type="number">
+    </mat-form-field>
+    </div>
+
+    <div class="mb-1 d-flex align-items-center justify-content-center">
+      <mat-form-field appearance="outline" class="w-75 mb-1">
+      <mat-label>Carbs</mat-label>
+      <input matInput type="number">
+    </mat-form-field>
+    </div>
+
+      <div class="mb-1 d-flex align-items-center justify-content-center">
+      <mat-form-field appearance="outline" class="w-75 mb-1">
+      <mat-label>Fibers</mat-label>
+      <input matInput type="number">
+    </mat-form-field>
+    </div>
+
+    <div class="mb-1 d-flex justify-content-center">
+      <button type="button" (click)="addFood()"
+              class="py-2 p-3 d-flex align-items-center justify-content-center button-bg-primary button-border">
+        <img src="../../assets/Icons/new-add.svg" class="icon" alt="icon-add">
+        Add
+      </button>
+    </div>  </form>
+</div>
