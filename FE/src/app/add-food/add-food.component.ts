@@ -28,6 +28,7 @@ export class AddFoodComponent {
     this.foodService.addFood(this.food).subscribe(response => {
       console.log('Food added successfully:', response);
       alert("Successfully added");
+
     }, error => {
       console.error('Error adding food:', error);
     });

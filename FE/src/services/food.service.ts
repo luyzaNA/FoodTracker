@@ -15,4 +15,9 @@ export class FoodService {
   addFood(food: FoodI): Observable<FoodI> {
     return this.http.post<FoodI>(this.apiUrl, food);
   }
+
+  getFoods(): Observable<FoodI[]> {
+    return this.http.get<FoodI[]>(`${this.apiUrl}s`);
+  }
+
 }
