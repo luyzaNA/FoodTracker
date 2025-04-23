@@ -5,6 +5,7 @@ export interface FoodI {
   carbohydrates: number;
   fats: number;
   fiber: number;
+  weight: number;
 }
 
 export class Food implements FoodI{
@@ -14,4 +15,5 @@ export class Food implements FoodI{
   carbohydrates!: number;
   fats!: number;
   fiber!: number;
+  weight!: number;
 }
