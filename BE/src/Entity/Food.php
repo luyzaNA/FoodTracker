@@ -10,96 +10,91 @@ class Food
 {
     #[ORM\Id]
     #[ORM\Column(length: 255)]
-    private ?string $Name = null;
+    private ?string $name = null;
 
     #[ORM\Column]
-    private ?int $Calories = null;
+    private ?int $calories = null;
 
     #[ORM\Column]
-    private ?int $Proteins = null;
+    private ?int $proteins = null;
 
     #[ORM\Column]
-    private ?int $Carbohydrates = null;
+    private ?int $carbohydrates = null;
 
     #[ORM\Column]
-    private ?int $Fats = null;
+    private ?int $fats = null;
 
     #[ORM\Column]
-    private ?int $Fiber = null;
-
-    public function getId(): ?int
-    {
-        return $this->id;
-    }
+    private ?int $fiber = null;
 
     public function getName(): ?string
     {
-        return $this->Name;
+        return $this->name;
     }
 
-    public function setName(string $Name): static
+    public function setName(string $name): static
     {
-        $this->Name = $Name;
+        $this->name = $name;
 
         return $this;
     }
 
     public function getCalories(): ?int
     {
-        return $this->Calories;
+        return $this->calories;
     }
 
-    public function setCalories(int $Calories): static
+    public function setCalories(int $calories): static
     {
-        $this->Calories = $Calories;
+        $this->calories = $calories;
 
         return $this;
     }
 
     public function getProteins(): ?int
     {
-        return $this->Proteins;
+        return $this->proteins;
     }
 
-    public function setProteins(int $Proteins): static
+    public function setProteins(int $proteins): static
     {
-        $this->Proteins = $Proteins;
+        $this->proteins = $proteins;
 
         return $this;
     }
 
     public function getCarbohydrates(): ?int
     {
-        return $this->Carbohydrates;
+        return $this->carbohydrates;
     }
 
-    public function setCarbohydrates(int $Carbohydrates): static
+    public function setCarbohydrates(int $carbohydrates): static
     {
-        $this->Carbohydrates = $Carbohydrates;
+        $this->carbohydrates = $carbohydrates;
 
         return $this;
     }
 
     public function getFats(): ?int
     {
-        return $this->Fats;
+        return $this->fats;
     }
 
-    public function setFats(int $Fats): static
+    public function setFats(int $fats): static
     {
-        $this->Fats = $Fats;
+        $this->fats = $fats;
 
         return $this;
     }
 
     public function getFiber(): ?int
     {
-        return $this->Fiber;
+        return $this->fiber;
     }
 
-    public function setFiber(int $Fiber): static
+    public function setFiber(int $fiber): static
     {
-        $this->Fiber = $Fiber;
+        $this->fiber = $fiber;
 
         return $this;
     }

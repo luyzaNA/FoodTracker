@@ -17,17 +17,22 @@ class FoodRepository extends ServiceEntityRepository
         parent::__construct($registry, Food::class);
     }
 
-   public function createFood(Food $food): Food
-   {
+    public function createFood(Food $food): Food
+     {
        $this->entityManager->persist($food);
        $this->entityManager->flush();
 
        return $food;
-   }
+    }
 
-  public function findFood(string $name): ?Food
-  {
-      return $this->findOneBy(['Name' => $name]);
-  }
+    public function findFood(string $name): ?Food
+    {
+        return $this->findOneBy(['name' => $name]);
+    }
+
+    public function findAllFoods(): array
+    {
+        return $this->findAll();
+    }
 }
 ?>
