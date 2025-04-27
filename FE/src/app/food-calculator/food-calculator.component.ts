@@ -32,7 +32,7 @@ export class FoodCalculatorComponent implements OnInit {
   searchTerm: string = '';
   filteredFoods: FoodI[] = [];
   selectedFoods: FoodI[] = [];
-  displayedColumns: string[] = ['name', 'weight', 'calories', 'proteins', 'carbohydrates', 'fats', 'fiber'];
+  displayedColumns: string[] = ['name', 'weight', 'calories', 'proteins', 'carbohydrates', 'fats', 'fiber', 'actions'];
   calculatedfoods: FoodI[] = [];
 
   constructor(private foodService: FoodService) { }
